@@ -5,9 +5,11 @@ feature "Page says Hello there!" do
   end
 end
 
-feature "Page asks for the persons name" do
-  scenario "page has content 'What's your name'" do
+feature "Enter name" do
+  scenario "submitting a name" do
     visit('/')
-    expect(page).to have_content "What's your name"
+    fill_in :person_name, with: "Nigel"
+    click_button 'Submit'
+    expect(page).to have_content "What's your name?"
   end
 end
