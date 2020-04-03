@@ -2,7 +2,7 @@ require 'sinatra/base'
 
 class Birthday < Sinatra::Base
   get '/' do
-    "It's my birthday!"
+    "Testing infrastructure working!"
   end
 
 
