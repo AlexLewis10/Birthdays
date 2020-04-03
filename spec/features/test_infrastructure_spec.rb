@@ -1,6 +1,6 @@
-feature "infrastructure is working" do
-  scenario "can run birthdays and check page content" do
+feature "Page says Hello there!" do
+  scenario "page has content 'Hello there!'" do
     visit('/')
-    expect(page).to have_content 'Testing infrastructure working!'
+    expect(page).to have_content 'Hello there!'
   end
 end
